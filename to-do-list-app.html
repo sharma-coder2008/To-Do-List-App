@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <link rel="stylesheet" href="to-do-list-app.css">
+
+    </head>
+
+    <body>
+
+        <header id="header">
+            <img src="https://images.squarespace-cdn.com/content/v1/5e949a92e17d55230cd1d44f/4fd288b5-0515-4fef-9de6-6f1f9734d635/Clear1x1.png" alt="icon image" id="icon">
+            <h1>To Do List</h1>
+
+            <p id="thought-heading"><b>THOUGHT OF THE DAY</b></p>
+            <button type="button" class="button" id="generate-button">Generate</button>
+            <p id="thought"></p>
+        </header>
+
+        <main>
+
+            <section id="input-details">
+                <form>
+                    <p class="head">Enter your name : </p>
+                    <input type="text" placeholder="First-Name" id="name">
+                    <button type="button" class="button">Submit</button>
+                    <p class="head">Enter today's date : </p>
+                    <input type="text" placeholder="DD-MM-YYYY" id="date">
+                    <button type="button" class="button" id="submit-button">Submit</button>
+                </form>
+
+            </section>
+
+            <section id="input-targets">
+                <p class="head">Kindly, Enter your targets for today in the placeholder given below and then click on add to lock the target</p>
+                <form>
+                    <input type="text" placeholder="Target eg.,'Complete HW'" id="target">
+                    <button type="button" class="button" id="add">Add</button>
+                </form>
+            </section>
+
+            <section id="target-list">
+                <h2 id="heading"></h2>
+                <ol id="list"></ol>
+            </section>
+        </main>
+
+        <footer id="footer-section">
+            <p>Thank you for using our To Do List app</p>
+            <p>Kindly rate it out of 10</p>
+
+            <form>
+                <input type="number" min="1" max="10" id="rating-input">
+                <button type="button" class="button" id="submit-button-1">Submit</button>
+            </form>
+
+            <p id="rating-reaction"></p>
+        </footer>
+
+        <script src = "to-do-list-app.js"></script>
+
+    </body>
+
+</html>
